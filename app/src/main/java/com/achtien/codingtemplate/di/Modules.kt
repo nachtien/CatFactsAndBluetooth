@@ -1,15 +1,17 @@
 package com.achtien.codingtemplate.di
 
+import Repository
+import com.achtien.codingtemplate.NicksViewModel
+import org.koin.core.module.dsl.singleOf
+import org.koin.core.module.dsl.viewModelOf
 import org.koin.dsl.module
 
-// If the module list gets long, this could be cleaned up by moving the module definitions
-// to the respective project module.
 val viewModelModule = module {
-
+    viewModelOf(::NicksViewModel)
 }
 
 val repositoryModule = module {
-
+    singleOf(::Repository)
 }
 
 val appModule = module {

@@ -26,5 +26,5 @@ dependencies {
 
     implementation(libs.kotlinx.coroutines)
     implementation(libs.koin.core)
-    implementation(projects.networking)
+    api(projects.networking)
 }

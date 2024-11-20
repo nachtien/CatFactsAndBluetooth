@@ -2,6 +2,7 @@ package com.achtien.codingtemplate
 
 import android.app.Application
 import com.achtien.codingtemplate.di.appModule
+import com.achtien.codingtemplate.di.networkingModule
 import com.achtien.codingtemplate.di.repositoryModule
 import com.achtien.codingtemplate.di.viewModelModule
 import org.koin.android.ext.koin.androidContext
@@ -16,7 +17,7 @@ class App : Application() {
             androidLogger()
             androidContext(this@App)
             modules(listOf(
-                appModule, viewModelModule, repositoryModule
+                appModule, viewModelModule, repositoryModule, networkingModule(true)
             ))
         }
     }
