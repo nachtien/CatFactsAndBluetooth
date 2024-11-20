@@ -1,7 +1,7 @@
-package com.achtien.codingtemplate.di
+package di
 
+import NicksViewModel
 import Repository
-import com.achtien.codingtemplate.NicksViewModel
 import org.koin.core.module.dsl.singleOf
 import org.koin.core.module.dsl.viewModelOf
 import org.koin.dsl.module

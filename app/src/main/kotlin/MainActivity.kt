@@ -1,5 +1,6 @@
 package com.achtien.codingtemplate
 
+import NicksViewModel
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -11,8 +12,8 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.achtien.codingtemplate.ui.theme.CodingTemplateTheme
 import org.koin.androidx.compose.koinViewModel
+import ui.theme.CodingTemplateTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

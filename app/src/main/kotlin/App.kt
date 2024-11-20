@@ -1,10 +1,10 @@
 package com.achtien.codingtemplate
 
 import android.app.Application
-import com.achtien.codingtemplate.di.appModule
 import com.achtien.codingtemplate.di.networkingModule
-import com.achtien.codingtemplate.di.repositoryModule
-import com.achtien.codingtemplate.di.viewModelModule
+import di.appModule
+import di.repositoryModule
+import di.viewModelModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
