@@ -36,5 +36,4 @@ fun NicksView(modifier: Modifier = Modifier) {
     Box(modifier = modifier) {
         Text(text = "Hello")
     }
-
 }
