@@ -1,6 +1,5 @@
 plugins {
     alias(libs.plugins.android.library)
-    alias(libs.plugins.jetbrains.kotlin.android)
 }
 
 android {
@@ -11,10 +10,10 @@ android {
         minSdk = libs.versions.minSdk.get().toInt()
     }
     lint {
-        targetSdk = 36
+        targetSdk = libs.versions.targetSdk.get().toInt()
     }
     testOptions {
-        targetSdk = 36
+        targetSdk = libs.versions.targetSdk.get().toInt()
     }
 }
 
