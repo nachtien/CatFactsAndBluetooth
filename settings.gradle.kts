@@ -25,6 +25,9 @@ dependencyResolutionManagement {
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 rootProject.name = "NicksProject"
-include(":app")
 include(":repository")
+include(":server")
 include(":networking")
+include(":common")
+//include(":bluetooth")
+include(":composeApp")

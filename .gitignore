@@ -34,3 +34,11 @@ google-services.json
 *.hprof
 
 /gradle/gradle-daemon-jvm.properties
+gradlew
+gradlew.bat
+gradle.xml
+gradle-wrapper.jar
+.idea/*
+misc.xml
+kotlinc.xml
+/.kotlin/*
