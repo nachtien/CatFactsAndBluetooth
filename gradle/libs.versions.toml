@@ -1,21 +1,22 @@
 [versions]
-agp = "8.13.0"
-kotlin = "2.2.20"
+agp = "9.0.1"
+kotlin = "2.3.10"
 coreKtx = "1.17.0"
 junit = "4.13.2"
 junitVersion = "1.3.0"
 espressoCore = "3.7.0"
 lifecycleRuntimeKtx = "2.8.6"
-activityCompose = "1.11.0"
-composeBom = "2025.09.01"
+activityCompose = "1.12.4"
+composeBom = "2026.02.00"
 koin = "4.1.1"
 koinCompose = "4.1.1"
 material = "1.13.0"
 appcompat = "1.7.1"
-androidxLifecycle = "2.9.4"
+androidxLifecycle = "2.10.0"
 coroutines = "1.10.2"
-ktor = "3.3.0"
+ktor = "3.4.0"
 coil = "3.3.0"
+kable = "0.42.0"
 
 targetSdk = "36"
 minSdk = "26"
@@ -46,11 +47,15 @@ kotlinx-datetime = { group = "org.jetbrains.kotlinx", name = "kotlinx-datetime",
 coil = {group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coil"}
 coil-network = {group = "io.coil-kt.coil3", name = "coil-network-okhttp", version.ref = "coil"}
 
+kable = { group = "com.juul.kable", name = "kable-default-permissions", version.ref = "kable" }
+kableCore = { group = "com.juul.kable", name = "kable-core", version.ref = "kable" }
+
 androidx-lifecycle-compose = { module = "androidx.lifecycle:lifecycle-runtime-compose", version.ref = "androidxLifecycle" }
 androidx-lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "androidxLifecycle" }
 androidx-lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "androidxLifecycle" }
 
 kotlinx-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines" }
+kotlinx-coroutinesAndroid = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines" }
 kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutines" }
 koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
 koin-androidx-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koinCompose" }
