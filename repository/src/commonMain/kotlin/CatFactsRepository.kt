@@ -28,11 +28,16 @@ class CatFactsRepository(
     }
 
     suspend fun getCatFacts(lastId: Long, limit: Int = 20): List<CatFact> {
-        val response = api.getCatFacts(lastId, limit)
+        try {
+            val response = api.getCatFacts(lastId, limit)
 
-        return response.data?.facts?.also {
-            saveCatFacts(it)
-        } ?: emptyList()
+            return response.data?.facts?.also {
+                saveCatFacts(it)
+            } ?: emptyList()
+        } catch (ex: Exception) {
+            return emptyList()
+        }
+
     }
 
     suspend fun saveCatFacts(catFacts: List<CatFact>?) {
